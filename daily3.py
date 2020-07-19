@@ -1,16 +1,8 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jul 18 20:14:28 2020
-
-@author: aditya
-"""
-
-
 #Daily Practise File
 #-----------------------------
 #Data Structures
 #List - ordered collection of items, mutable : [square ]
-list1 = [1,2,3,4,5,'a','Dhiraj',"Upadhyaya",True]  #list type of object with data
+list1 = [1,2,3,4,5,'a','Aditya',"Gupta",True]  #list type of object with data
 list1  #print when through spyder
 type(list1)  #type of object
 print(list1)  #print when running complete file
@@ -26,6 +18,7 @@ sorted(list2)
 #%%
 #tuple - multiple type of objects like list, immutable: ( round brackets) : no changes
 tuple1 = (1, 2, 'a', 'b')
+#%%  to draw a horizontal line
 tuple1
 type(tuple1)
 
@@ -34,7 +27,7 @@ type(tuple1)
 dict1 = {1:'Ramesh', 2:'Suresh', 3:'Priyanka'}
 dict1
 type(dict1)
-
+type(list2)
 car = { 'brand':'Honda', 'model': 'Jazz', 'year' : 2017}
 type(car)
 car
@@ -67,6 +60,7 @@ print(set2)
 str1 = 'Python Programming'
 type(str1)
 print(str1)
+str1.upper()
 str2="Yash"
 str2.lower()
 dir(str)
@@ -78,7 +72,7 @@ for i in list1:
     print(i)
   
 for i in list1:    print(i)
-for i in list1:    print('Dhiraj ', i + 6)
+for i in list1:    print('Aditya', i + 6)
 
 tuple1
 list5 = ['a',1]
