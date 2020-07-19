@@ -70,9 +70,10 @@ list1
 #for loop : indentations with colon : Run next 2 lines together
 for i in list1:
     print(i)
-  
+
 for i in list1:    print(i)
-for i in list1:    print('Aditya', i + 6)
+list2= [1,2,3,4]
+for i in list2:    print('Aditya', i + 6)
 
 tuple1
 list5 = ['a',1]
@@ -127,10 +128,9 @@ np
 np.mean(np.arange(1,10000000))
 np1
 type(np1)
-np?
 #help on numpy 
 dir(np)  #functions available in numpy
-np.mean?  # help on mean function of numpy
+  # help on mean function of numpy
 np2 = np.array([ 90, 50, 60, 70 ])
 np2
 np.sort(np2)
@@ -144,7 +144,7 @@ np3.shape
 #https://mode.com/python-tutorial/pandas-dataframe/
 import pandas as pd
 #https://pandas.pydata.org/pandas-docs/stable/
-pd?
+
 dir(pd)
 df1 = pd.DataFrame({'rollno':[1,2,3,4], 'name': [ "Dhiraj", "Kounal", "Akhil", "Pooja" ], 'marks':[ 40, 50, 60.5, 70 ], 'gender':['M', 'M','M', 'F']})
 df1
@@ -184,6 +184,8 @@ import statsmodels.api as sm
 #https://vincentarelbundock.github.io/Rdatasets/datasets.html
 mtcars = sm.datasets.get_rdataset(dataname='mtcars', package= 'datasets')
 mtcars.data.head()
+mtcars.data.tail()
+mtcars.data.columns
 
 #%%
 #Load from Excel/ CSV and export to
@@ -191,7 +193,7 @@ data = mtcars.data
 data.head(6)
 type(data)
 data.to_csv('mtcars.csv')
-data.to_excel('mtcarsExcel.xlsx','sheet3', header=False)
+data.to_excel('mtcarsxl.xlsx','sheet3', header=True)
 
 #writing to multiple sheets
 writer = pd.ExcelWriter('test.xlsx', engine='xlsxwriter')
@@ -202,12 +204,12 @@ data.to_excel(writer, sheet_name='sheet2')
 writer.save()
 
 #%%
-data.to_excel?
+
 #load from CSV and Excel
-data2a
+
 data2a = pd.read_csv('mtcars.csv') #when csv is in project folder
 data2a
-data2b
+
 data2b = pd.read_csv('E:/pywork/pyprojects/duanalytics/pyanalytics/mtcars.csv')
 data2b
 #csv in any other location - full path
