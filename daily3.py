@@ -154,7 +154,6 @@ df1.columns  #columnanes
 df1.describe() #description of numerical values
 df1.dtypes #data types
 df1.shape  # rows and columns
-df1.groupby('gender').size()
 df1.groupby('gender')['marks'].mean()
 df1.groupby('gender').aggregate({'marks': [np.mean, 'max','min','std','count']})
 
