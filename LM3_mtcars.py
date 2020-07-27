@@ -3,14 +3,18 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+#pip install pydataset
 from pydataset import data
-mtcars = data('mtcars')
+mtcars = pd.read_csv('mtcars.csv')
+mtcars=data('mtcars')
+
 data=mtcars
 data.head()
 data.columns
 data.dtypes
 data.shape
 #%%% Sample by number
+
 s1 = data.sample(10)
 s1
 #%%%
@@ -123,3 +127,5 @@ r2_score(DV_test, predicted2a)  #???
 
 #%%% Links
 #https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
+
+

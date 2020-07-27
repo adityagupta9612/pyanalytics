@@ -209,7 +209,7 @@ writer.save()
 data2a = pd.read_csv('mtcars.csv') #when csv is in project folder
 data2a
 
-data2b = pd.read_csv('E:/pywork/pyprojects/duanalytics/pyanalytics/mtcars.csv')
+data2b = pd.read_csv('mtcars.csv')
 data2b
 #csv in any other location - full path
 data2b
